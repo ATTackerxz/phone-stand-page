@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks for using our phone stand!</title>
+    <style>
+        /* 样式设置 */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9; /* 背景色 */
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        /* 图片链接样式 */
+        .image-container {
+            display: flex;
+            flex-direction: column; /* 默认纵向排列 */
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-link {
+            display: inline-block;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none; /* 去除下划线 */
+            color: #333;
+            width: 300px; /* 设置图片容器的固定宽度 */
+        }
+
+        .image-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-link img {
+            width: 100%; /* 使图片适应容器宽度 */
+            height: 200px; /* 统一图片高度 */
+            object-fit: cover; /* 确保图片填满容器且不变形 */
+        }
+
+        .caption {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold; /* 标题加粗 */
+        }
+
+        /* 屏幕大于768px时的布局 */
+        @media (min-width: 768px) {
+            .image-container {
+                flex-direction: row; /* 电脑屏幕上改为横向排列 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Thanks for using our phone stand!</h1>
+        <div class="image-container">
+            <!-- 图片1：指向Google Form -->
+            <a href="https://forms.gle/epTNsV5Ahv6PZ8Y6A" target="_blank" class="image-link">
+                <img src="image1.png" alt="Google Form">
+                <div class="caption">If you could take a usage survey, that would be wonderful!</div>
+            </a>
+            
+            <!-- 图片2：指向PDF文件 -->
+            <a href="TYW.pdf" target="_blank" class="image-link">
+                <img src="image2.png" alt="PDF File">
+                <div class="caption">If you're interested in coffee shop discounts, we have information for you!</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
